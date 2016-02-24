@@ -24,16 +24,16 @@ This sample application has been built using PingFederate 8.0.1 and the OAuth Pl
 * Open this project (ios-appauth-sample-application) in XCode
 * Add the [AppAuth library for iOS](https://github.com/openid/AppAuth-iOS) project to your XCode project (File > Add Files to Project.. and browse to the AppAuth.xcodeproj file)
 * Modify the project settings of the ios-appauth-sample-application
-..* under Build Settings, modify the "Header Search Paths" to include the location of the AppAuth .h files
-..* under Build Phases, add to the "Link Binary With Libraries" list and add libAppAuth.a and SafariServices.framework
+  * under Build Settings, modify the "Header Search Paths" to include the location of the AppAuth .h files
+  * under Build Phases, add to the "Link Binary With Libraries" list and add libAppAuth.a and SafariServices.framework
 * Modify the MainViewController.m file to define your PingFederate server, your client_id and redirect_uri
 
 ### PingFederate configuration
 
 * Install PingFederate and the OAuth Playground (see the readme in the OAuth Playground distribution)
 * Modify the OAuth client "ac_client" in the PingFederate configuration:
-..* OAuth Settings -> Client Management -> ac_client
-..* Edit the "Redirect URIs" option to include the application callback URI (com.pingidentity.developer.appauth://oidc_callback)
+  * OAuth Settings -> Client Management -> ac_client
+  * Edit the "Redirect URIs" option to include the application callback URI (com.pingidentity.developer.appauth://oidc_callback)
 
 
 Note: Due to the Application Transport Security (ATS) feature of iOS9, your PingFederate server must have a valid SSL certificate.
