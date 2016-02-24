@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F05E5A191C7E401600F835DA /* libAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F05E5A161C7E3F9B00F835DA /* libAppAuth.a */; };
+		F05E5A1B1C7E402700F835DA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05E5A1A1C7E402700F835DA /* SafariServices.framework */; };
 		F0D83AD81C7E2BC100480DD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D83AD71C7E2BC100480DD4 /* main.m */; };
 		F0D83ADB1C7E2BC100480DD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D83ADA1C7E2BC100480DD4 /* AppDelegate.m */; };
-		F0D83ADE1C7E2BC100480DD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D83ADD1C7E2BC100480DD4 /* ViewController.m */; };
+		F0D83ADE1C7E2BC100480DD4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D83ADD1C7E2BC100480DD4 /* MainViewController.m */; };
 		F0D83AE11C7E2BC100480DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D83ADF1C7E2BC100480DD4 /* Main.storyboard */; };
 		F0D83AE31C7E2BC100480DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D83AE21C7E2BC100480DD4 /* Assets.xcassets */; };
 		F0D83AE61C7E2BC100480DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0D83AE41C7E2BC100480DD4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F05E5A151C7E3F9B00F835DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D83AED1C7E2BD100480DD4 /* AppAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 340E737C1C5D819B0076B1F6;
+			remoteInfo = AppAuth;
+		};
+		F05E5A171C7E3F9B00F835DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0D83AED1C7E2BD100480DD4 /* AppAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 341741F01C5D8283000EF209;
+			remoteInfo = AppAuthTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F05E5A1A1C7E402700F835DA /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		F0D83AD31C7E2BC100480DD4 /* ios-appauth-sample-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-appauth-sample-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D83AD71C7E2BC100480DD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0D83AD91C7E2BC100480DD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0D83ADA1C7E2BC100480DD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0D83ADC1C7E2BC100480DD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0D83ADD1C7E2BC100480DD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0D83ADC1C7E2BC100480DD4 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F0D83ADD1C7E2BC100480DD4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F0D83AE01C7E2BC100480DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0D83AE21C7E2BC100480DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D83AE51C7E2BC100480DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0D83AE71C7E2BC100480DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D83AED1C7E2BD100480DD4 /* AppAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppAuth.xcodeproj; path = "/Users/pmeyer/Documents/XcodeProjects/ios-appauth-sample-application/../AppAuth-iOS/AppAuth.xcodeproj"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,15 +54,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05E5A1B1C7E402700F835DA /* SafariServices.framework in Frameworks */,
+				F05E5A191C7E401600F835DA /* libAppAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F05E5A111C7E3F9B00F835DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F05E5A161C7E3F9B00F835DA /* libAppAuth.a */,
+				F05E5A181C7E3F9B00F835DA /* AppAuthTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F0D83ACA1C7E2BC100480DD4 = {
 			isa = PBXGroup;
 			children = (
+				F05E5A1A1C7E402700F835DA /* SafariServices.framework */,
+				F0D83AED1C7E2BD100480DD4 /* AppAuth.xcodeproj */,
 				F0D83AD51C7E2BC100480DD4 /* ios-appauth-sample-application */,
 				F0D83AD41C7E2BC100480DD4 /* Products */,
 			);
@@ -60,8 +94,8 @@
 			children = (
 				F0D83AD91C7E2BC100480DD4 /* AppDelegate.h */,
 				F0D83ADA1C7E2BC100480DD4 /* AppDelegate.m */,
-				F0D83ADC1C7E2BC100480DD4 /* ViewController.h */,
-				F0D83ADD1C7E2BC100480DD4 /* ViewController.m */,
+				F0D83ADC1C7E2BC100480DD4 /* MainViewController.h */,
+				F0D83ADD1C7E2BC100480DD4 /* MainViewController.m */,
 				F0D83ADF1C7E2BC100480DD4 /* Main.storyboard */,
 				F0D83AE21C7E2BC100480DD4 /* Assets.xcassets */,
 				F0D83AE41C7E2BC100480DD4 /* LaunchScreen.storyboard */,
@@ -124,12 +158,35 @@
 			mainGroup = F0D83ACA1C7E2BC100480DD4;
 			productRefGroup = F0D83AD41C7E2BC100480DD4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F05E5A111C7E3F9B00F835DA /* Products */;
+					ProjectRef = F0D83AED1C7E2BD100480DD4 /* AppAuth.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F0D83AD21C7E2BC100480DD4 /* ios-appauth-sample-application */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F05E5A161C7E3F9B00F835DA /* libAppAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppAuth.a;
+			remoteRef = F05E5A151C7E3F9B00F835DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F05E5A181C7E3F9B00F835DA /* AppAuthTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AppAuthTests.xctest;
+			remoteRef = F05E5A171C7E3F9B00F835DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F0D83AD11C7E2BC100480DD4 /* Resources */ = {
@@ -149,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D83ADE1C7E2BC100480DD4 /* ViewController.m in Sources */,
+				F0D83ADE1C7E2BC100480DD4 /* MainViewController.m in Sources */,
 				F0D83ADB1C7E2BC100480DD4 /* AppDelegate.m in Sources */,
 				F0D83AD81C7E2BC100480DD4 /* main.m in Sources */,
 			);
@@ -262,22 +319,32 @@
 		F0D83AEB1C7E2BC100480DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "/Users/pmeyer/Documents/XcodeProjects/AppAuth-iOS/**";
 				INFOPLIST_FILE = "ios-appauth-sample-application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pingidentity.developer.ios-appauth-sample-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		F0D83AEC1C7E2BC100480DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "/Users/pmeyer/Documents/XcodeProjects/AppAuth-iOS/**";
 				INFOPLIST_FILE = "ios-appauth-sample-application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pingidentity.developer.ios-appauth-sample-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -300,6 +367,7 @@
 				F0D83AEC1C7E2BC100480DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
